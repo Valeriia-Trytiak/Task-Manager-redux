@@ -1,7 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { MdClose } from 'react-icons/md';
-// Импортируем генератор экшена
-import { deleteTask, toggleCompleted } from '../../redux/actions';
+import { deleteTask, toggleCompleted } from 'redux/tasksSlice';
 import { ButtonSubmit, Checkbox, Text, Wrapper } from './Task.styled';
 
 export const Task = ({ task }) => {

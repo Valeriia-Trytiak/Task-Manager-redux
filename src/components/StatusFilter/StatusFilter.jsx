@@ -1,9 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-// Импортируем генератор экшена
-import { setStatusFilter } from '../../redux/actions';
-import { statusFilters } from '../../redux/constants';
-import { getStatusFilter } from '../../redux/selectors';
 import { Button } from 'components/Button/Button';
+import { statusFilters } from 'redux/constants';
+import { getStatusFilter } from 'redux/selectors';
+import { setStatusFilter } from 'redux/filtersSlice';
 import { Wrapper } from './StatusFilter.styled';
 
 export const StatusFilter = () => {
